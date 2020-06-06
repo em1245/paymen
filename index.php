@@ -3,12 +3,13 @@
 <?php
 
 
-$query = 'subir__c';
+$query = 'Event';
 
     $contactData = array(
-        'nombre'       =>   $event_id,-->(String)'salesforce id'
-        'texto'     =>   $form_id, --> (String)'salesforce idss'
-   
+        'eventId'       =>   $event_id,-->(String)'salesforce id'
+        'appFormId'     =>   $form_id, --> (String)'salesforce id'
+        'contactId'     =>   $sfcontact,--> (String)'salesforce id'
+        'appData'       =>   $args --> (Array) {'name':'danryl','lastname':'carpio'}
      );
 
     $sf_helpers = new Test_Helpers();
